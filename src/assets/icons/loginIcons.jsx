@@ -21,7 +21,7 @@ export const Logo = () => {
     </svg>
 }
 
-export const Eye = () => {
+export const EyeIcon = () => {
     return <svg width="19" height="20" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
         <mask id="mask0_1781_2" maskUnits="userSpaceOnUse" x="0" y="0" width="17" height="17">
             <rect x="0.00012207" y="0.500488" width="16" height="16" fill="white" />

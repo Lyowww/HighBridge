@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
-import { Logo, Eye, CheckBoxIcon } from "../../../assets/icons/loginIcons";
+import { Logo, EyeIcon, CheckBoxIcon } from "../../../assets/icons/loginIcons";
 import styles from "./styles.module.css";
 
 const Login = () => {
@@ -88,15 +88,16 @@ const Login = () => {
                                 {...register("password", { required: "Password is required", minLength: { value: 6, message: "Password must be at least 6 characters" } })}
                             />
                             <div className={styles.rightSideContentFormInputEye} onClick={() => setShowPassword(!showPassword)}>
-                                <Eye />
+                                <EyeIcon />
                             </div>
                             {errors.password && <p className={styles.errorMessage}>{errors.password.message}</p>}
                         </div>
                         <div className={styles.rightSideContentFormCheckboxContainer}>
                             <div className={styles.rightSideContentFormCheckbox} onClick={() => setRememberMe(!rememberMe)}>
-                            <input type="checkbox" style={rememberMe ? { backgroundColor: "#E0E0E0", border: "none" } : { backgroundColor: "#FAFAFA" }} readOnly/>
-                                <div className={styles.rightSideContentFormCheckboxIcon} style={{ display: rememberMe ? "block" : "none" }}>
-                                    <CheckBoxIcon />
+                                <div className={styles.rightSideCheckBox} style={rememberMe ? { backgroundColor: "#E0E0E0", border: "none" } : { backgroundColor: "#FAFAFA" }} readOnly>
+                                    <div className={styles.rightSideContentFormCheckboxIcon} style={{ display: rememberMe ? "block" : "none" }}>
+                                        <CheckBoxIcon />
+                                    </div>
                                 </div>
                                 <p>Remember me</p>
                             </div>

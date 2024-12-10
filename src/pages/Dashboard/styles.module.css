@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+Armenian:wght@100..900&family=Zen+Kaku+Gothic+Antique&display=swap');
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f5f7fa;
+    overflow: hidden;
+}
+
+.leftMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.topMenu {
+    position: fixed;
+    top: 0;
+    left: 250px;
+    right: 0;
+    height: 60px;
+    z-index: 1001;
+}
+
+.content {
+    margin-top: 100px;
+    margin-left: 250px;
+    padding: 16px;
+    background-color: #f5f7fa;
+    flex-grow: 1;
+    font-family: 'Inter', sans-serif;
+    overflow-y: auto;
+    min-height: 100vh;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .leftMenu {
+        width: 200px;
+    }
+
+    .topMenu {
+        left: 200px;
+    }
+
+    .content {
+        margin-left: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .leftMenu {
+        width: 100%;
+        height: auto;
+        position: relative;
+        border-right: none;
+    }
+
+    .topMenu {
+        left: 0;
+        margin-top: 0;
+        position: relative;
+    }
+
+    .content {
+        margin-left: 0;
+        margin-top: 0;
+    }
+}

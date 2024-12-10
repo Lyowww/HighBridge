@@ -1,24 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Armenian:wght@100..900&family=Zen+Kaku+Gothic+Antique&display=swap');
 
-body {
+body{
+    margin: 0px;
+}
+.container {
+    overflow: hidden;
     background-image: url("../../../assets/images/background-login.png");
     background-size: cover;
     background-repeat: no-repeat;
-    background-blend-mode: darken;
-    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
     overflow: hidden;
-}
-
-.container {
+    margin: 0px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    width: 90%;
+    width: 100%;
+    overflow: hidden;
     padding-left: 15%;
     font-family: "Zen Kaku Gothic Antique", sans-serif;
 }
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.container>* {
+    z-index: 1;
+}
+
 
 .leftSide {
     width: 50%;
@@ -138,8 +157,8 @@ body {
 
 .rightSideContentFormInputEye {
     position: absolute;
-    margin-top: -2.5%;
-    margin-left: 27%;
+    margin-top: -2.4%;
+    margin-left: 20%;
 }
 
 .rightSideContentFormCheckboxContainer {
@@ -156,7 +175,7 @@ body {
     gap: 5px;
 }
 
-.rightSideContentFormCheckbox input {
+.rightSideCheckBox {
     width: 22px;
     height: 22px;
     border-radius: 2px;
@@ -164,20 +183,17 @@ body {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.rightSideContentFormCheckboxIcon{
-    position: absolute;
-    margin-left: -7.2%;
-    margin-top: -0.2%;
-}
-
-.rightSideContentFormCheckboxContainer a{
+.rightSideContentFormCheckboxContainer a {
     text-decoration: none;
     color: #424242;
 }
 
-.rightSideContentFormButton button{
+.rightSideContentFormButton button {
     width: 100%;
     background-color: #212121;
     height: 50px;

@@ -1,0 +1,33 @@
+.container{
+    width: 93.5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card{
+    border: 1px solid #FFFFFF;
+    width: max-content;
+    height: 105px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    gap: 20px;
+}
+
+
+.cardIcon{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardInfo p{
+    margin: 0px;
+}

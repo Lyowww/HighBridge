@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+Armenian:wght@100..900&family=Zen+Kaku+Gothic+Antique&display=swap');
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: start;
+    height: 100%;
+    padding: 15%;
+    background-color: #FFFFFF;
+    font-family: "Inter", sans-serif;
+    border-right: 1px solid #E6EFF5;
+    gap: 40px;
+}
+
+.container nav ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.container nav ul li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.container div img{
+    width: 36px;
+    height: 36px;
+}
+
+.active{
+    position: absolute;
+    left: 0;
+    display: block;
+}
