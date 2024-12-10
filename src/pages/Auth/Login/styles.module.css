@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Armenian:wght@100..900&family=Zen+Kaku+Gothic+Antique&display=swap');
+
+body{
+    margin: 0px;
+}
+.container {
+    overflow: hidden;
+    background-image: url("../../../assets/images/background-login.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    padding-left: 15%;
+    font-family: "Zen Kaku Gothic Antique", sans-serif;
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.container>* {
+    z-index: 1;
+}
+
+
+.leftSide {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    gap: 20px;
+}
+
+.leftSide h1 {
+    font-weight: 700;
+    font-size: 39px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.leftSide p {
+    font-weight: 400;
+    font-size: 16px;
+    width: 50%;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.leftSideContent {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    overflow: hidden;
+    position: relative;
+}
+
+.lines {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 20%;
+}
+
+.line {
+    width: 100px;
+    height: 3px;
+    background-color: #9E9E9E;
+    transition: all 0.3s ease;
+}
+
+.activeLine {
+    width: 140px;
+    height: 5px;
+    background-color: #fff;
+}
+
+.rightSide {
+    width: 50%;
+    display: flex;
+    height: 100%;
+    padding-top: 10%;
+    align-items: center;
+}
+
+.rightSideContent {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 65%;
+    height: 100%;
+    border-radius: 24px 24px 0 0;
+    padding: 5%;
+    background-color: #FAFAFA;
+
+}
+
+.rightSideContentHeader {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+}
+
+.rightSideContentHeader p {
+    font-size: 13px;
+}
+
+.rightSideContentHeader h2 {
+    font-size: 25px;
+    font-weight: 600;
+    margin: 0px;
+}
+
+.rightSideContentForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.rightSideContentFormInput input {
+    width: 95%;
+    height: 50px;
+    border-radius: 8px;
+    border: 1px solid #BDBDBD;
+    padding-left: 20px;
+    background-color: #FAFAFA;
+    outline: none;
+}
+
+.rightSideContentFormInput input:focus {
+    border: 1px solid #424242;
+}
+
+.rightSideContentFormInput label {
+    position: absolute;
+    background-color: #FAFAFA;
+    margin-left: 1%;
+    margin-top: -0.9%;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+    text-align: center;
+}
+
+.rightSideContentFormInputEye {
+    position: absolute;
+    margin-top: -2.4%;
+    margin-left: 20%;
+}
+
+.rightSideContentFormCheckboxContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rightSideContentFormCheckbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.rightSideCheckBox {
+    width: 22px;
+    height: 22px;
+    border-radius: 2px;
+    border: 1px solid #BDBDBD;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightSideContentFormCheckboxContainer a {
+    text-decoration: none;
+    color: #424242;
+}
+
+.rightSideContentFormButton button {
+    width: 100%;
+    background-color: #212121;
+    height: 50px;
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: 500;
+}
